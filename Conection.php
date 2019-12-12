@@ -6,6 +6,3 @@ $database = "id11853233_ssipgrouph";
 
 $conn = mysqli_connect($sever, $user, $pass, $database);
 ?>
-
-Ke ubah gak di lu
-Test gw ubah
