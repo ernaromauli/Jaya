@@ -18,19 +18,19 @@ header("location:Admin.php?pesan=update");
  
 ?>
 <?php
-// Display selected user data based on id
-// Getting id from url
+
 $id = $_GET['id'];
 
-// Fetech user data based on id
-$result = mysqli_query($mysqli, "SELECT * FROM users WHERE id=$id");
+$result = mysqli_query($mysqli, "SELECT * FROM tbl_admin WHERE id=$id");
 
 while($user_data = mysqli_fetch_array($result))
 {
-    $name = $user_data['name'];
-    $email = $user_data['email'];
-    $mobile = $user_data['mobile'];
-}
+		echo "<td>".$user_data['Nama_Mahasiswa']."</td>";
+		echo "<td>".$user_data['NIM']."</td>";
+        echo "<td>".$user_data['Nama_Prodi']."</td>";
+        echo "<td>".$user_data['Jurusan']."</td>";
+        echo "<td>".$user_data['Email']."</td>"; 
+	
 ?>
 <html>
 <head>  
