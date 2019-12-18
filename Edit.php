@@ -25,8 +25,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM tbl_admin WHERE id=$id");
 
 while($user_data = mysqli_fetch_array($result))
 {
-		echo "<td>".$user_data['Nama_Mahasiswa']."</td>";
-		echo "<td>".$user_data['NIM']."</td>";
+	echo "<td>".$user_data['Nama_Mahasiswa']."</td>";
+	echo "<td>".$user_data['NIM']."</td>";
         echo "<td>".$user_data['Nama_Prodi']."</td>";
         echo "<td>".$user_data['Jurusan']."</td>";
         echo "<td>".$user_data['Email']."</td>"; 
